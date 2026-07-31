@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafe Awan - Pesan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">☕ Kafe Awan</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html" class="active">Pesan</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <div class="cart-icon" id="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Pesanan Anda</h1>
+
+        <!-- Gimmick Mystery Order -->
+        <section class="mystery-box">
+            <h2>🎲 Pesan Misterius</h2>
+            <p>Dapatkan minuman kejutan dengan harga spesial. Klik tombol di bawah!</p>
+            <button id="mystery-btn" class="btn mystery-btn">Pesan Misterius (Rp15.000)</button>
+        </section>
+
+        <!-- Keranjang Belanja -->
+        <section class="cart-section">
+            <h2>Keranjang Belanja</h2>
+            <div id="cart-items">
+                <p class="empty-cart">Keranjang masih kosong.</p>
+            </div>
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+                <p>Total: <strong>Rp<span id="total-price">0</span></strong></p>
+                <button id="checkout-btn" class="btn checkout-btn">Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Sukses -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Pesanan Berhasil!</h2>
+            <div id="modal-details"></div>
+            <p>Terima kasih telah memesan di Kafe Awan.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kafe Awan.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
